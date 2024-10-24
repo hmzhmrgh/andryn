@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.catalog {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.item {
+    background-color: white;
+    border: 1px solid #ddd;
+    margin: 10px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.item h2 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.item p {
+    font-size: 14px;
+    color: #555;
+}
+
+.price {
+    display: block;
+    font-size: 18px;
+    color: #e74c3c;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Media query untuk tampilan mobile */
+
+@media (max-width: 768px) {
+    .catalog {
+        justify-content: center; /* Center items */
+    }
+    .item {
+        width: 45%; /* Dua item per baris */
+        margin: 10px 6px; /* Beri jarak antar item */
+    }
+}
+
+/* Media query untuk tampilan yang lebih kecil */
+
+@media (max-width: 480px) {
+    .catalog {
+        justify-content: center; /* Center items */
+    }
+    .item {
+        width: 35%; /* Satu item per baris di layar kecil */
+        margin: 10px 6px; /* Jarak antar item */
+    }
+}
+
+a {
+    text-decoration: none; /* Menghilangkan garis bawah */
+    color: blue; /* Mengatur warna link */
+}
