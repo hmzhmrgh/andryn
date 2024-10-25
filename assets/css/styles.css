@@ -54,25 +54,13 @@ header {
 
 /* Media query untuk tampilan mobile */
 
-@media (max-width: 768px) {
+@media (max-width: 1440px) {
     .catalog {
         justify-content: center; /* Center items */
     }
     .item {
-        width: 45%; /* Dua item per baris */
+        width: 30%; /* Dua item per baris */
         margin: 10px 6px; /* Beri jarak antar item */
-    }
-}
-
-/* Media query untuk tampilan yang lebih kecil */
-
-@media (max-width: 480px) {
-    .catalog {
-        justify-content: center; /* Center items */
-    }
-    .item {
-        width: 35%; /* Satu item per baris di layar kecil */
-        margin: 10px 6px; /* Jarak antar item */
     }
 }
 
